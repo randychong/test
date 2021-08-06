@@ -9,20 +9,14 @@ Press q to quit
 """
     print(message)
 
-tasksHigh = []
-tasksMed = []
-tasksLow = []
+tasks = []
 
 def addTask():
     task = input("What task do you need to complete?\n")
     priority = input("Is this task a high, medium, or low priority?\n")
     taskItem = {"task": task, "priority": priority}
-    if priority == "high":
-        tasksHigh.append(taskItem)
-    elif priority == "medium":
-        tasksMed.append(taskItem)
-    elif priority == "low":
-        tasksLow.append(taskItem)
+    if priority == "high" or "medium" or "low":
+        tasks.append(taskItem)
     else:
         print("Invalid priority level. Please enter task again.")
         addTask()
@@ -30,55 +24,21 @@ def addTask():
     startApp()
 
 def viewTask():
-    view = input("Would you like to view high, medium, or low priority tasks?\n")
-    if view == "high":
-        print("List of Tasks\n********************\n")
-        counterHigh = 1
-        for item in tasksHigh:
-            print(counterHigh,": ", item)
-            counterHigh += 1
-    elif view == "medium":
-        counterMed = 1
-        for item in tasksMed:
-            print(counterMed,": ", item)
-            counterMed += 1
-    elif view == "low":
-        counterLow = 1
-        for item in tasksLow:
-            print(counterLow,": ", item)
-            counterLow += 1
-    else:
-        print("Please enter a valid priority to view.\n")
-        viewTask() 
+    print("List of Tasks\n********************\n")
+    counter = 1
+    for item in tasks:
+        print(counter,": ", item)
+        counter += 1
     startApp()
 
 def delTask():
-    view = input("Would you like to delete a high, medium, or low priority task?\n")
-    if view == "high":
-        print("List of Tasks\n********************\n")
-        counterHigh = 1
-        for item in tasksHigh:
-            print(counterHigh,": ", item)
-            counterHigh += 1
-            delete = int(input("Please select the number of the task you would like to delete.\n"))
-            tasksHigh.pop(delete - 1)
-    elif view == "medium":
-        counterMed = 1
-        for item in tasksMed:
-            print(counterMed,": ", item)
-            counterMed += 1
-            delete = int(input("Please select the number of the task you would like to delete.\n"))
-            tasksMed.pop(delete - 1)
-    elif view == "low":
-        counterLow = 1
-        for item in tasksLow:
-            print(counterLow,": ", item)
-            counterLow += 1
-        delete = int(input("Please select the number of the task you would like to delete.\n"))
-        tasksLow.pop(delete - 1)
-    else:
-        print("Please enter a valid priority to delete.\n")
-        delTask() 
+    print("List of Tasks\n********************\n")
+    counter = 1
+    for item in tasks:
+        print(counter,": ", item)
+        counter += 1
+    delete = int(input("Please select the number of the task you would like to delete.\n"))
+    tasks.pop(delete - 1)
     startApp()
 
 def startApp():

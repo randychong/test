@@ -1,7 +1,3 @@
-tasksHigh = []
-tasksMed = []
-tasksLow = []
-
 def mainMenu():
     message ="""
 Main Menu:\n
@@ -12,6 +8,10 @@ Press q to quit
 ********************
 """
     print(message)
+
+tasksHigh = []
+tasksMed = []
+tasksLow = []
 
 def addTask():
     task = input("What task do you need to complete?\n")

@@ -42,10 +42,8 @@ class Pokemon:
 main_pokemon = Pokemon("Lucario", 5000, 800, 200, "Aura Sphere", 9999, 4000)
 enemy_pokemon = Pokemon("Mewtwo", 9999, 999, 99, "Psystrike", 9999, 9999)
 
-def victory_or_defeat():
-    if main_pokemon.health <= 0:
-        time.sleep(1)
-        print("""
+def surprised_pikachu():
+    print("""
 ⢀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⣠⣤⣶⣶
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⢰⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣀⣀⣾⣿⣿⣿⣿
@@ -61,27 +59,154 @@ def victory_or_defeat():
 ⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿
         """)
+
+def attack():
+    print("""
+    
+                                                       ___
+                                                      |_  |
+                                                        | |
+__                      ____                            | |
+\ ````''''----....____.'\   ````''''--------------------| |--.               _____      .-.
+ :.                      `-._                           | |   `''-----''''```     ``''|`: :|
+  '::.                       `'--.._____________________| |                           | : :|
+    '::..       ----....._______________________________| |                           | : :|
+      `'-::...__________________________________________| |   .-''-..-'`-..-'`-..-''-.cjr :|
+           ```'''---------------------------------------| |--'                         `'-'
+                                                        | |
+                                                       _| |
+                                                      |___|
+    """)
+
+def defend():
+    print("""
+ _________________________ 
+|<><><>     |  |    <><><>|
+|<>         |  |        <>|
+|           |  |          |
+|  (______ <\-/> ______)  |
+|  /_.-=-.\| " |/.-=-._\  | 
+|   /_    \(o_o)/    _\   |
+|    /_  /\/ ^ \/\  _\    |
+|      \/ | / \ | \/      |
+|_______ /((( )))\ _______|
+|      __\ \___/ /__      |
+|--- (((---'   '---))) ---|
+|           |  |          |
+|           |  |          |
+:           |  |          :     
+ \<>        |  |       <>/      
+  \<>       |  |      <>/       
+   \<>      |  |     <>/       
+    `\<>    |  |   <>/'         
+      `\<>  |  |  <>/'         
+        `\<>|  |<>/'         
+          `-.  .-`           
+            '--'
+    """)
+
+def special_move():
+    print("""
+                                                                    ..;===+.
+                                                                .:=iiiiii=+=
+                                                             .=i))=;::+)i=+,
+                                                          ,=i);)I)))I):=i=;
+                                                       .=i==))))ii)))I:i++
+                                                     +)+))iiiiiiii))I=i+:'
+                                .,:;;++++++;:,.       )iii+:::;iii))+i='
+                             .:;++=iiiiiiiiii=++;.    =::,,,:::=i));=+'
+                           ,;+==ii)))))))))))ii==+;,      ,,,:=i))+=:
+                         ,;+=ii))))))IIIIII))))ii===;.    ,,:=i)=i+
+                        ;+=ii)))IIIIITIIIIII))))iiii=+,   ,:=));=,
+                      ,+=i))IIIIIITTTTTITIIIIII)))I)i=+,,:+i)=i+
+                     ,+i))IIIIIITTTTTTTTTTTTI))IIII))i=::i))i='
+                    ,=i))IIIIITLLTTTTTTTTTTIITTTTIII)+;+i)+i`
+                    =i))IIITTLTLTTTTTTTTTIITTLLTTTII+:i)ii:'
+                   +i))IITTTLLLTTTTTTTTTTTTLLLTTTT+:i)))=,
+                   =))ITTTTTTTTTTTLTTTTTTLLLLLLTi:=)IIiii;
+                  .i)IIITTTTTTTTLTTTITLLLLLLLT);=)I)))))i;
+                  :))IIITTTTTLTTTTTTLLHLLLLL);=)II)IIIIi=:
+                  :i)IIITTTTTTTTTLLLHLLHLL)+=)II)ITTTI)i=
+                  .i)IIITTTTITTLLLHHLLLL);=)II)ITTTTII)i+
+                  =i)IIIIIITTLLLLLLHLL=:i)II)TTTTTTIII)i'
+                +i)i)))IITTLLLLLLLLT=:i)II)TTTTLTTIII)i;
+              +ii)i:)IITTLLTLLLLT=;+i)I)ITTTTLTTTII))i;
+             =;)i=:,=)ITTTTLTTI=:i))I)TTTLLLTTTTTII)i;
+           +i)ii::,  +)IIITI+:+i)I))TTTTLLTTTTTII))=,
+         :=;)i=:,,    ,i++::i))I)ITTTTTTTTTTIIII)=+'
+       .+ii)i=::,,   ,,::=i)))iIITTTTTTTTIIIII)=+
+      ,==)ii=;:,,,,:::=ii)i)iIIIITIIITIIII))i+:'
+     +=:))i==;:::;=iii)+)=  `:i)))IIIII)ii+'
+   .+=:))iiiiiiii)))+ii;
+  .+=;))iiiiii)));ii+
+ .+=i:)))))))=+ii+
+.;==i+::::=)i=;
+,+==iiiiii+,
+`+=+++;`
+        """)
+
+def potion():
+    print("""
+  ,--./,-.
+ / #      \\
+|          |
+ \        /
+  `._,._,'
+    """)
+
+def pikachu():
+    print("""
+quu..__
+ $$$b  `---.__
+  "$$b        `--.                          ___.---uuudP
+   `$$b           `.__.------.__     __.---'      $$$$"              .
+     "$b          -'            `-.-'            $$$"              .'|
+       ".                                       d$"             _.'  |
+         `.   /                              ..."             .'     |
+           `./                           ..::-'            _.'       |
+            /                         .:::-'            .-'         .'
+           :                          ::''\          _.'            |
+          .' .-.             .-.           `.      .'               |
+          : /'$$|           .@"$\           `.   .'              _.-'
+         .'|$u$$|          |$$,$$|           |  <            _.-'
+         | `:$$:'          :$$$$$:           `.  `.       .-'
+         :                  `"--'             |    `-.     \\
+        :##.       ==             .###.       `.      `.    `\\
+        |##:                      :###:        |        >     >
+        |#'     `..'`..'          `###'        x:      /     /
+         \                                   xXX|     /    ./
+          \                                xXXX'|    /   ./
+          /`-.                                  `.  /   /
+         :    `-  ...........,                   | /  .'
+         |         ``:::::::'       .            |<    `.
+         |             ```          |           x| \ `.:``.
+         |                         .'    /'   xXX|  `:`M`M':.
+         |    |                    ;    /:' xXXX'|  -'MMMMM:'
+         `.  .'                   :    /:'       |-'MMMM.-'
+          |  |                   .'   /'        .'MMM.-'
+          `'`'                   :  ,'          |MMM<
+            |                     `'            |tbap\\
+             \                                  :MM.-'
+              \                 |              .''
+               \.               `.            /
+                /     .:::::::.. :           /
+               |     .:::::::::::`.         /
+               |   .:::------------\       /
+              /   .''               >::'  /
+              `',:                 :    .'
+                                   `:.:' 
+    """)
+
+def victory_or_defeat():
+    if main_pokemon.health <= 0:
+        time.sleep(1)
+        surprised_pikachu()
         print("\nYou lost the battle...and $9,999...")
         time.sleep(1)
         exit()
     elif enemy_pokemon.health <= 0:
         time.sleep(1)
-        print("""
-⢀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⣠⣤⣶⣶
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⢰⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣀⣀⣾⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⡏⠉⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿
-⣿⣿⣿⣿⣿⣿⠀⠀⠀⠈⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠁⠀⣿
-⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⠀⠀⠙⠿⠿⠿⠻⠿⠿⠟⠿⠛⠉⠀⠀⠀⠀⠀⣸⣿
-⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣴⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⢰⣹⡆⠀⠀⠀⠀⠀⠀⣭⣷⠀⠀⠀⠸⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠈⠉⠀⠀⠤⠄⠀⠀⠀⠉⠁⠀⠀⠀⠀⢿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⢾⣿⣷⠀⠀⠀⠀⡠⠤⢄⠀⠀⠀⠠⣿⣿⣷⠀⢸⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⡀⠉⠀⠀⠀⠀⠀⢄⠀⢀⠀⠀⠀⠀⠉⠉⠁⠀⠀⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿
-        """)
+        surprised_pikachu()
         print("\nYou won the battle...and $9,999!!!")
         time.sleep(1)
         exit()
@@ -91,88 +216,14 @@ def victory_or_defeat():
 def main_menu():
     time.sleep(1)
     if main_pokemon.energy >= main_pokemon.energy_req:
-        print("""
-                                                                    ..;===+.
-                                                                .:=iiiiii=+=
-                                                             .=i))=;::+)i=+,
-                                                          ,=i);)I)))I):=i=;
-                                                       .=i==))))ii)))I:i++
-                                                     +)+))iiiiiiii))I=i+:'
-                                .,:;;++++++;:,.       )iii+:::;iii))+i='
-                             .:;++=iiiiiiiiii=++;.    =::,,,:::=i));=+'
-                           ,;+==ii)))))))))))ii==+;,      ,,,:=i))+=:
-                         ,;+=ii))))))IIIIII))))ii===;.    ,,:=i)=i+
-                        ;+=ii)))IIIIITIIIIII))))iiii=+,   ,:=));=,
-                      ,+=i))IIIIIITTTTTITIIIIII)))I)i=+,,:+i)=i+
-                     ,+i))IIIIIITTTTTTTTTTTTI))IIII))i=::i))i='
-                    ,=i))IIIIITLLTTTTTTTTTTIITTTTIII)+;+i)+i`
-                    =i))IIITTLTLTTTTTTTTTIITTLLTTTII+:i)ii:'
-                   +i))IITTTLLLTTTTTTTTTTTTLLLTTTT+:i)))=,
-                   =))ITTTTTTTTTTTLTTTTTTLLLLLLTi:=)IIiii;
-                  .i)IIITTTTTTTTLTTTITLLLLLLLT);=)I)))))i;
-                  :))IIITTTTTLTTTTTTLLHLLLLL);=)II)IIIIi=:
-                  :i)IIITTTTTTTTTLLLHLLHLL)+=)II)ITTTI)i=
-                  .i)IIITTTTITTLLLHHLLLL);=)II)ITTTTII)i+
-                  =i)IIIIIITTLLLLLLHLL=:i)II)TTTTTTIII)i'
-                +i)i)))IITTLLLLLLLLT=:i)II)TTTTLTTIII)i;
-              +ii)i:)IITTLLTLLLLT=;+i)I)ITTTTLTTTII))i;
-             =;)i=:,=)ITTTTLTTI=:i))I)TTTLLLTTTTTII)i;
-           +i)ii::,  +)IIITI+:+i)I))TTTTLLTTTTTII))=,
-         :=;)i=:,,    ,i++::i))I)ITTTTTTTTTTIIII)=+'
-       .+ii)i=::,,   ,,::=i)))iIITTTTTTTTIIIII)=+
-      ,==)ii=;:,,,,:::=ii)i)iIIIITIIITIIII))i+:'
-     +=:))i==;:::;=iii)+)=  `:i)))IIIII)ii+'
-   .+=:))iiiiiiii)))+ii;
-  .+=;))iiiiii)));ii+
- .+=i:)))))))=+ii+
-.;==i+::::=)i=;
-,+==iiiiii+,
-`+=+++;`
-        """)
+        special_move()
         main_pokemon.use_special_attack()
         enemy_pokemon.take_damage(main_pokemon.special_attack)
     else:
         pass
 
     if enemy_pokemon.energy >= enemy_pokemon.energy_req:
-        print("""
-                                                                    ..;===+.
-                                                                .:=iiiiii=+=
-                                                             .=i))=;::+)i=+,
-                                                          ,=i);)I)))I):=i=;
-                                                       .=i==))))ii)))I:i++
-                                                     +)+))iiiiiiii))I=i+:'
-                                .,:;;++++++;:,.       )iii+:::;iii))+i='
-                             .:;++=iiiiiiiiii=++;.    =::,,,:::=i));=+'
-                           ,;+==ii)))))))))))ii==+;,      ,,,:=i))+=:
-                         ,;+=ii))))))IIIIII))))ii===;.    ,,:=i)=i+
-                        ;+=ii)))IIIIITIIIIII))))iiii=+,   ,:=));=,
-                      ,+=i))IIIIIITTTTTITIIIIII)))I)i=+,,:+i)=i+
-                     ,+i))IIIIIITTTTTTTTTTTTI))IIII))i=::i))i='
-                    ,=i))IIIIITLLTTTTTTTTTTIITTTTIII)+;+i)+i`
-                    =i))IIITTLTLTTTTTTTTTIITTLLTTTII+:i)ii:'
-                   +i))IITTTLLLTTTTTTTTTTTTLLLTTTT+:i)))=,
-                   =))ITTTTTTTTTTTLTTTTTTLLLLLLTi:=)IIiii;
-                  .i)IIITTTTTTTTLTTTITLLLLLLLT);=)I)))))i;
-                  :))IIITTTTTLTTTTTTLLHLLLLL);=)II)IIIIi=:
-                  :i)IIITTTTTTTTTLLLHLLHLL)+=)II)ITTTI)i=
-                  .i)IIITTTTITTLLLHHLLLL);=)II)ITTTTII)i+
-                  =i)IIIIIITTLLLLLLHLL=:i)II)TTTTTTIII)i'
-                +i)i)))IITTLLLLLLLLT=:i)II)TTTTLTTIII)i;
-              +ii)i:)IITTLLTLLLLT=;+i)I)ITTTTLTTTII))i;
-             =;)i=:,=)ITTTTLTTI=:i))I)TTTLLLTTTTTII)i;
-           +i)ii::,  +)IIITI+:+i)I))TTTTLLTTTTTII))=,
-         :=;)i=:,,    ,i++::i))I)ITTTTTTTTTTIIII)=+'
-       .+ii)i=::,,   ,,::=i)))iIITTTTTTTTIIIII)=+
-      ,==)ii=;:,,,,:::=ii)i)iIIIITIIITIIII))i+:'
-     +=:))i==;:::;=iii)+)=  `:i)))IIIII)ii+'
-   .+=:))iiiiiiii)))+ii;
-  .+=;))iiiiii)));ii+
- .+=i:)))))))=+ii+
-.;==i+::::=)i=;
-,+==iiiiii+,
-`+=+++;`
-        """)
+        special_move()
         enemy_pokemon.use_special_attack()
         main_pokemon.take_damage(enemy_pokemon.special_attack)
     else:
@@ -197,6 +248,7 @@ def main_menu():
     while choice != 5:
         if choice == 1:
             time.sleep(1)
+            attack()
             print(f"\n{main_pokemon.name} jabs {enemy_pokemon.name} for {main_pokemon.attack - enemy_pokemon.defense} damage!\n")
             damage_dealt = int(f"{main_pokemon.attack - enemy_pokemon.defense}")
             enemy_pokemon.take_damage(damage_dealt)
@@ -210,6 +262,7 @@ def main_menu():
             main_menu()
         elif choice == 2:
             time.sleep(1)
+            defend()
             print(f"\n{main_pokemon.name} shields {enemy_pokemon.name}'s attack and only takes 100 damage!\n")
             time.sleep(1)
             print(f"You feel as if {main_pokemon.name} is gaining more energy.\n")
@@ -219,6 +272,7 @@ def main_menu():
             main_menu()
         elif choice == 3:
             time.sleep(1)
+            potion()
             main_pokemon.heal_damage()
             time.sleep(1)
             print(f"\nYou noticed that {enemy_pokemon.name} gained some extra energy.\n")
@@ -227,6 +281,7 @@ def main_menu():
             main_menu()
         elif choice == 4:
             time.sleep(1)
+            pikachu()
             print(f"""
             -------------------------------------------------------------------
             -------------------------------------------------------------------
@@ -282,6 +337,45 @@ _,-'       `.     |    |  /`.   \,-'    |   \  /   |   |    \  |`.
        \    \ `.__,'|  |`-._    `|      |__| \/ |  `.__,'|  | |   |
         \_.-'       |__|    `-._ |              '-.|     '-.| |   |
                                 `'                            '-._|\n
+                ."-,.__
+                 `.     `.  ,
+              .--'  .._,'"-' `.
+             .    .'         `'
+             `.   /          ,'
+               `  '--.   ,-"'
+                `"`   |  \\
+                   -. \, |
+                    `--Y.'      ___.
+                         \     L._, \\
+               _.,        `.   <  <\                _
+             ,' '           `, `.   | \            ( `
+          ../, `.            `  |    .\`.           \ \_
+         ,' ,..  .           _.,'    ||\l            )  '".
+        , ,'   \           ,'.-.`-._,'  |           .  _._`.
+      ,' /      \ \        `' ' `--/   | \          / /   ..\\
+    .'  /        \ .         |\__ - _ ,'` `        / /     `.`.
+    |  '          ..         `-...-"  |  `-'      / /        . `.
+    | /           |L__           |    |          / /          `. `.
+   , /            .   .          |    |         / /             ` `
+  / /          ,. ,`._ `-_       |    |  _   ,-' /               ` \\
+ / .           \"`_/. `-_ \_,.  ,'    +-' `-'  _,        ..,-.    \`.
+.  '         .-f    ,'   `    '.       \__.---'     _   .'   '     \ \\
+' /          `.'    l     .' /          \..      ,_|/   `.  ,'`     L`
+|'      _.-""` `.    \ _,'  `            \ `.___`.'"`-.  , |   |    | \\
+||    ,'      `. `.   '       _,...._        `  |    `/ '  |   '     .|
+||  ,'          `. ;.,.---' ,'       `.   `.. `-'  .-' /_ .'    ;_   ||
+|| '              V      / /           `   | `   ,'   ,' '.    !  `. ||
+||/            _,-------7 '              . |  `-'    l         /    `||
+. |          ,' .-   ,' ||               | .-.        `.      .'     ||
+ `'        ,'    `".'    |               |    `.        '. -.'       `'
+          /      ,'      |               |,'    \-.._,.'/'
+          .     /        .               .       \    .''
+        .`.    |         `.             /         :_,'.'
+          \ `...\   _     ,'-.        .'         /_.-'
+           `-.__ `,  `'   .  _.>----''.  _  __  /
+                .'        /"'          |  "'   '_
+               /_|.-'\ ,".             '.'`__'-( \\
+                 / ,"'"\,'               `/  `-.|"
         """)
 
 start_screen()

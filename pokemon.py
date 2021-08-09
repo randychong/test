@@ -15,8 +15,8 @@ class Pokemon:
         self.health -= damage
 
     def heal_damage(self, ):
-        if self.health <= 400:
-            self.health += 100
+        if self.health <= 4000:
+            self.health += 1000
         else:
             time.sleep(1)
             print(f"\n{self.name} has too much health to use a potion.")
@@ -34,14 +34,27 @@ class Pokemon:
             time.sleep(1)
             print(f"{self.name} has taken too much damage to continue fighting...\n")
             time.sleep(1)
-            print(f"{self.name} lost the battle.")
+            print(f"{self.name} has been defeated.")
             time.sleep(1)
-            exit()
         else:
             pass
 
-main_pokemon = Pokemon("Lucario", 500, 80, 40, "Aura Sphere", 9999, 400)
-enemy_pokemon = Pokemon("Mewtwo", 1000, 100, 50, "Psystrike", 400, 800)
+main_pokemon = Pokemon("Lucario", 5000, 800, 200, "Aura Sphere", 9999, 4000)
+enemy_pokemon = Pokemon("Mewtwo", 9999, 999, 99, "Psystrike", 9999, 9999)
+
+def victory_or_defeat():
+    if main_pokemon.health <= 0:
+        time.sleep(1)
+        print("\nYou lost the battle...and $9,999...")
+        time.sleep(1)
+        exit()
+    elif enemy_pokemon.health <= 0:
+        time.sleep(1)
+        print("\nYou won the battle...and $9,999!!!")
+        time.sleep(1)
+        exit()
+    else:
+        pass
 
 def main_menu():
     time.sleep(1)
@@ -59,6 +72,8 @@ def main_menu():
 
     main_pokemon.check_pokemon_hp()
     enemy_pokemon.check_pokemon_hp()
+
+    victory_or_defeat()
 
     choice = int(input(f"""
     {main_pokemon.name} VS {enemy_pokemon.name}
@@ -87,11 +102,11 @@ def main_menu():
             main_menu()
         elif choice == 2:
             time.sleep(1)
-            print(f"\n{main_pokemon.name} shields {enemy_pokemon.name}'s attack and only takes 10 damage!\n")
+            print(f"\n{main_pokemon.name} shields {enemy_pokemon.name}'s attack and only takes 100 damage!\n")
             time.sleep(1)
             print(f"You feel as if {main_pokemon.name} is gaining more energy.\n")
-            main_pokemon.take_damage(10)
-            main_pokemon.gain_energy(100)
+            main_pokemon.take_damage(100)
+            main_pokemon.gain_energy(1000)
             time.sleep(1)
             main_menu()
         elif choice == 3:
@@ -99,7 +114,7 @@ def main_menu():
             main_pokemon.heal_damage()
             time.sleep(1)
             print(f"\nYou noticed that {enemy_pokemon.name} gained some extra energy.\n")
-            enemy_pokemon.gain_energy(200)
+            enemy_pokemon.gain_energy(2000)
             time.sleep(1)
             main_menu()
         elif choice == 4:

@@ -1,7 +1,7 @@
 import time
 
 class Pokemon:
-    def __init__(self, name, health, attack, defense, special, special_attack, energy_req, energy = 0) -> None:
+    def __init__(self, name, health, attack, defense, special, special_attack, energy_req, energy = 0):
         self.name = name
         self.health = health
         self.attack = attack
@@ -14,7 +14,7 @@ class Pokemon:
     def take_damage(self, damage):
         self.health -= damage
 
-    def heal_damage(self, ):
+    def heal_damage(self):
         if self.health <= 4000:
             self.health += 1000
         else:
@@ -213,11 +213,11 @@ def special_move():
 
 def potion():
     print("""
-  ,--./,-.
- / #      \\
-|          |
- \        /
-  `._,._,'
+ ,d88b.d88b,     ,d88b.d88b,     ,d88b.d88b,     ,d88b.d88b,     ,d88b.d88b,
+88888888888     88888888888     88888888888     88888888888     88888888888
+`Y8888888Y'     `Y8888888Y'     `Y8888888Y'     `Y8888888Y'     `Y8888888Y'
+  `Y888Y'         `Y888Y'         `Y888Y'         `Y888Y'         `Y888Y'
+    `Y'             `Y'             `Y'             `Y'             `Y'
     """)
 
 def pikachu():
@@ -311,7 +311,7 @@ def main_menu():
     5. Run Away
 
     """))
-    while choice != 5:
+    while choice != "x":
         if choice == 1:
             time.sleep(1)
             attack()

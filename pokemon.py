@@ -317,7 +317,7 @@ def main_menu():
             attack()
             print(f"\n{main_pokemon.name} jabs {enemy_pokemon.name} for {main_pokemon.attack - enemy_pokemon.defense} damage!\n")
             damage_dealt = int(f"{main_pokemon.attack - enemy_pokemon.defense}")
-            enemy_pokemon.take_damage(damage_dealt)
+            enemy_pokemon.take_damage(main_pokemon.attack)
             enemy_pokemon.gain_energy(damage_dealt)
             time.sleep(1)
             print(f"{enemy_pokemon.name} counters back dealing {enemy_pokemon.attack - main_pokemon.defense} damage!\n")

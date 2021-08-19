@@ -1,0 +1,30 @@
+.sub-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  border: 3px black solid;
+  background-color: aliceblue;
+}
+
+.sub {
+  height: 500px;
+  width: 300px;
+}
+
+#body {
+  width: 100vw;
+}
+
+body {
+  text-align: center;
+}
+
+.header {
+  height: 100px;
+}
+
+.footer {
+  height: 100px;
+}

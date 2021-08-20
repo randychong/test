@@ -1,0 +1,56 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "tile1 tile2 tile3"
+    "tile4 tile5 tile6"
+    "tile7 tile8 tile9";
+  width: 150px;
+  height: 150px;
+}
+
+.tile1 {
+  grid-area: tile1;
+  display: flex;
+}
+
+.tile2 {
+  grid-area: tile2;
+  display: flex;
+}
+
+.tile4 {
+  grid-area: tile4;
+  display: flex;
+}
+
+.tile5 {
+  grid-area: tile5;
+  display: flex;
+}
+
+.tile6 {
+  grid-area: tile6;
+  display: flex;
+}
+
+.tile7 {
+  grid-area: tile7;
+  display: flex;
+}
+
+.tile8 {
+  grid-area: tile8;
+  display: flex;
+}
+
+.tile9 {
+  grid-area: tile9;
+  display: flex;
+}
+
+h1 {
+  border: 3px solid black;
+  height: 50px;
+  width: 50px;
+  margin: 0;
+}

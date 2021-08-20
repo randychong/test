@@ -41,7 +41,7 @@ li {
 .navbar {
   display: flex;
   padding-bottom: 10px;
-  border-bottom: 1px #d8d8d8 solid;
+  border-bottom: 1px rgb(37, 36, 36) solid;
 }
 
 .nav-links {

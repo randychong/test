@@ -12,17 +12,19 @@ button.innerHTML = "Add Task";
 taskContainer.className = "taskContainer";
 list.className = "taskList";
 
-mainContainer.append(input, button);
 taskContainer.append(list);
-root.append(mainContainer, taskContainer);
+mainContainer.append(input, button, taskContainer);
+root.append(mainContainer);
 
 function addTask() {
   const input = document.querySelector(".input").value;
   const list = document.querySelector(".taskList");
-  const task = document.createElement("li");
+  const listItem = document.createElement("li");
 
-  task.append(input);
-  list.append(task);
+  listItem.className = "listItem";
+
+  listItem.append(input);
+  list.append(listItem);
 }
 
 button.addEventListener("click", function () {

@@ -15,8 +15,8 @@ list.className = "taskList";
 header.innerHTML = "Randy's To Do List";
 
 taskContainer.append(list);
-mainContainer.append(input, button, taskContainer);
-root.append(header, mainContainer);
+mainContainer.append(input, button);
+root.append(header, mainContainer, taskContainer);
 
 function addTask() {
   const input = document.querySelector(".input").value;

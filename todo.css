@@ -9,8 +9,8 @@
 }
 
 .mainContainer {
-  height: 50vh;
-  width: 50vw;
+  height: 200px;
+  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;

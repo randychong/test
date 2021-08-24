@@ -4,6 +4,7 @@ const input = document.createElement("input");
 const button = document.createElement("button");
 const taskContainer = document.createElement("div");
 const list = document.createElement("ul");
+const header = document.createElement("h1");
 
 mainContainer.className = "mainContainer";
 input.className = "input";
@@ -11,10 +12,11 @@ button.className = "button";
 button.innerHTML = "Add Task";
 taskContainer.className = "taskContainer";
 list.className = "taskList";
+header.innerHTML = "Randy's To Do List";
 
 taskContainer.append(list);
 mainContainer.append(input, button, taskContainer);
-root.append(mainContainer);
+root.append(header, mainContainer);
 
 function addTask() {
   const input = document.querySelector(".input").value;

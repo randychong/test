@@ -4,7 +4,7 @@ h1 {
 
 .cards {
   display: flex;
-  height: 300px;
+  height: 220px;
   width: 200px;
   background-color: rgb(68, 68, 68);
   border-radius: 5px;
@@ -21,6 +21,11 @@ img {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+}
+
+body {
+  text-align: center;
 }

@@ -205,24 +205,17 @@ const data = [
   },
 ];
 
-async function fetchPokemonData() {
-  const pokemonData = await fetch("https://pokeapi.co/api/v2/pokemon");
-  const jsonPokeData = await pokemonData.json();
-
-  const cardContainer = document.querySelector(".card-container");
-
-  for (const singleCardData of jsonPokeData.results) {
+function fetchPokemonData() {
+  for (const singlePokemon of data[0].pokemon) {
+    const container = document.querySelector(".card-container");
     const cards = document.createElement("div");
     cards.className = "cards";
-    const cardImg = document.createElement("img");
-    cardImg.src =
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png";
     const cardName = document.createElement("h4");
-    cardName.innerHTML = singleCardData.name;
-    cards.append(cardImg, cardName);
-    cardContainer.append(cards);
+    cardName.innerHTML = singlePokemon.name;
+    const pokemonImg = document.createElement("img");
+    pokemonImg.src = singlePokemon.sprites.front;
+    cards.append(pokemonImg, cardName);
+    container.append(cards);
   }
-
-  // loop
 }
 fetchPokemonData();
